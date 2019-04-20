@@ -32,7 +32,7 @@ html {
 
 section {
 	width: 1800px;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	display: flex;
 	margin: 0px auto;
 }
@@ -50,9 +50,8 @@ h2{
 	font-family: 'Titillium_Web_Regular', sans-serif;
 }
 
-/* Header */
+/* Оформление  Header */
 .container {
-	border: 1px solid red;
 	height: 800px;
 	background: url(../img/background.jpg) no-repeat center;
 	background-size: cover;
@@ -312,6 +311,7 @@ h2{
 	box-shadow: 0 16px 32px 0 rgba(41, 71, 178, 1);
 }
 
+/* Оформление блока secure линиями */
 .pre_secure {
 	display: flex;
 	justify-content: center;
@@ -327,10 +327,31 @@ h2{
 
 .pre_secure_right {
 	display: flex;
-	flex: 1.53;
-	/* border: 1px solid red; */
+	flex: 1.538;
 }
 
+.section_secure_article_right {
+	justify-content: flex-end;
+}
+
+.section_secure_line_right {
+	width: 190px;
+	height:1px;
+	padding-top: 18px;
+	border-bottom: 1px solid #959393;
+}
+
+.section_secure_line_left {
+	display: block;
+	position: absolute;
+	transform: translate(100px 100px);
+	width: 1px;
+	height:200px;
+	padding-top: 119px;
+	border-bottom: 1px solid #959393;
+}
+
+/* Оформление секции secure */
 .section_secure {
 	display: flex;
 	justify-content: center
@@ -340,17 +361,19 @@ h2{
 	display: flex;
 	flex-direction: column;
 	flex: 1.5;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	padding-left: 26px;
 	padding-right: 1px;
+}
+
+.section_secure_center {
+	border-right: 1px solid #959393;
 }
 
 .section_secure_right {
 	display: flex;
 	flex-direction: column;
 	flex: 1.5;
-	border: 1px solid red;
-
 }
 
 .section_secure_article_left {
@@ -363,14 +386,18 @@ h2{
 	flex: 0.78;
 }
 
-.swiss, .anonimus_email {
+.swiss, .encrypton, .anonimus_email {
 	display: flex;
 	flex-direction: row;
-	padding-top: 13px;
+	padding-top: 14px;
 	padding-bottom: 15px;
 }
 
-.swiss img {
+.swiss {
+	border-right: 1px solid #959393;
+}
+
+.swiss img, .encrypton img {
 	width: 45px;
 	height: 55px;
 	margin: 0 18px;
@@ -421,27 +448,71 @@ h2{
 	padding-bottom: 2px;
 }
 
-.section_secure_empty_right {
-	justify-content: flex-end;
+/* Оформление секции Phisical Security */
+.phisical_security {
+	display: flex;
+	justify-content: center;
+	width: 1800px;
+	height: 241px;
 }
 
-.section_secure_line_right {
-	width: 190px;
-	height:1px;
-	padding-top: 119px;
+.phisical_security_left {
+	text-align: right;
+	vertical-align: bottom;
+	flex: 1.765;
+	border-right: 1px solid #959393;
+}
+
+.phisical_security_left h2 {
+	font-family: 'Titillium_Web_Regular', sans-serif;
+	font-size: 6rem;
+	margin-right: 42px;
+	margin-top: 91px;
+	margin-bottom: 0;
+	color: #555555;
+	letter-spacing: 0.5;
+}
+
+.phisical_security_left span {
+	color: red;
+}
+
+.phisical_security_left h3 {
+	font-family: 'Titillium_Web_Regular', sans-serif;
+	font-size: 2.4rem;
+	margin: 13px 42px;
+	color: #959393;
+	line-height: 0.94;
+	letter-spacing: 0.9;
+}
+
+.phisical_security_right {
+	display: flex;
+	flex: 1;
+}
+
+/* Оформление блока Learn more about our security features и декоративной линии */
+.decorative_line {
+	width: 974px;
+	height: 1px;
 	border-bottom: 1px solid #959393;
+	margin-top: 30px;
 }
 
-.section_secure_line_left {
-	display: block;
-	position: absolute;
-	transform: translate(100px 100px);
-	width: 1px;
-	height:200px;
-	padding-top: 119px;
-	border-bottom: 1px solid #959393;
+.buttonshape {
+	padding: 19px 35px 24px 35px;
+	border: 1px solid #959393;
+	border-radius: 30px;
+	line-height: 1.1;
 }
 
+.buttonshape p {
+	font-family: 'Titillium_Web_Regular', sans-serif;
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+/* Адаптив */
 @media (min-width: 1200px) {
 	.container {
 		max-width: 1800px;
